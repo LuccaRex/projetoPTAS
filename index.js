@@ -9,8 +9,16 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '/index.html'));
 })
 
-app.get('/contato', (req, res) => {
-  res.sendFile(path.join(__dirname, '/contato.html'));
+app.get('/formacao', (req, res) => {
+  res.sendFile(path.join(__dirname, '/formacao.html'));
+})
+
+app.get('/projeto', (req, res) => {
+  res.sendFile(path.join(__dirname, '/projeto.html'));
+})
+
+app.get('/pessoal', (req, res) => {
+  res.sendFile(path.join(__dirname, '/pessoal.html'));
 })
 
 app.listen(port, () => {
