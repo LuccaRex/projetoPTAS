@@ -17,10 +17,6 @@ app.get('/projeto', (req, res) => {
   res.sendFile(path.join(__dirname, '/projeto.html'));
 })
 
-app.get('/pessoal', (req, res) => {
-  res.sendFile(path.join(__dirname, '/pessoal.html'));
-})
-
 app.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`)
 })
